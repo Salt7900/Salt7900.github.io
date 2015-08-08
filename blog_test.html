@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben Fallon - Blog</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+  </head>
+
+  <body>
+
+<h1 class ="name">Ben Fallon </h1>
+<h2 id="top_of_page">Blog</h2>
+      <div id="nav_bar">
+      <ul>
+        <li class="nav_bar"><a href="http://salt7900.github.io" class="nav_bar_link">About Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">Contact Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">My Work</a></li>
+        <li class="nav_bar"><a href="http://salt7900.github.io/blog.index" class="nav_bar_link" id="current">Blog</a></li>
+
+      </ul>
+    </div>
+
+    <div id=blog_text>
+
+  <h1>The Beginning of Programming</h1>
+  <h2>The start of my adventure</h2>
+  <h4>8.1.2015, 2:11PM</h4>
+
+    <p>
+      The directions I have to start only have things that are actually related to code- but I thought I would start at the top with a little of other things. About how this week has been a little nuts, trying to figure out what's going on, and how to do this or do that. This week has been the beginning on what will hopefully be a lifetime of programming- enjoying code, and everything that it can do. And this blog is the start of my documenting those adventures, which if you ask me, is pretty cool.
+    </p>
+    <h3>Technical things....(what I'm supposed to talk about)</h3>
+    <h4>What is git? What is version control</h4>
+    <p>
+      So, a week ago I would have had no idea. I may have looked up github on Wikipedia once, but it probably didn't make much sense. And while I am very, very far from any mastery of either, I do have a little bit more insight as to what they are and what they do. Enough that I can comfortably work with git on a working level. It's kinda like the whole "Every square is a rectangle but not every rectangle is a square" thing. All Git is version control. But not all version control is git. All version control (VCS) does is keep track of changes. Which makes sense given the name. In the beginning of computer science days, you'd write a program, (for sake of explanation, we'll call it game) and it would become game_v1. Now lets say you find a bug in the last 40 lines of the code. You change just the bug in the last 40 lines, and copy the rest of the code, and the whole thing now becomes game_v2. But wait! You didn't change the rest of it! Wouldn't it be great if there was a way to just change what you want, and not touch the rest? That's where VCS comes in. It will track only what you change- and you don't have to keep track of what changed and when and why- with a little help from you, it will do it all. Which helps, yes, when you're coding by yourself, but is way more helpful when you're coding in a team. Say we're back working on our game, but this time our friend Paul is helping. There's two bugs- one is in the last 40 lines, and one is in the first 40. We take the one in the end, and he takes the one at the top. Of course he finished first, and saves all of his changes as v2. Now we finish ours, and re-copy all of the file, with our changes into v2. But we were working on an old file, _v1, and when we copied, copied the old (v1) version of Paul’s code. And his is now gone, being the original. What VCS (of which git is a type) lets us do is track the lines that we made changes to. When he finished and merged his code into the project, it saw he only changed line 23, and only updated line 23. When we merge ours in, and it sees we only changed line 475, it only changes line 475 and leaves the rest (including 23, where Paul made his change) alone. All of us can work on different parts and not be afraid of getting rid of somebody else's changes.
+
+      Thats what git does. It tracks what we've changed. When I make a change to a file, and then run the command git status in terminal, it will tell me what files I've changed. And then it's just a matter of committing those changes to the file. It's pretty nifty.
+    </p>
+    <p>
+        So, now that we sorta understand what git is, what's GitHub? And why should I use it...
+
+        Yes, you could just keep the files you're working on locally. And if you're working by yourself, that's fine (just back them up somewhere. Murphy's Law applies.) But going back to our imaginary game with Paul. Wouldn't it be great if there was a place to upload our changes so that when we merge, we always have the most up to date file? Enter GitHub. All it does is host all of our files- when I make a change, I push that change to GitHub. That way, when Paul wants to make a change, he can pull the most recent version and make changes to that. You'll never be out of date in regards to your other team members.
+    </p>
+
+    <p>
+      Like I said, this is only the start. In the next 18 weeks, and probably the next 18 years, I'm excited to see what I can add to this.
+    </p>
+
+    <h4> -Salt7900 </h4>
+
+    </div>
+
+      <footer>Ben Fallon, 2015</footer>
+
+  </body>
