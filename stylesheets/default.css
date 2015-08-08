@@ -1,0 +1,52 @@
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a{
+  font-family: Garamond;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#000B1C;
+  background-color: white;
+}
+
+.nav_bar{
+  float: left;
+  font-size: 24px;
+  text-align: center;
+  background-color: #000B1C;
+}
+
+.nav_bar_link{
+  display: block;
+  width: 120px;
+  color: white;
+}
+
+.link_bar{
+  font-size: 24px;
+  background-color: #000B1C;
+}
+
+.link_bar_link{
+  display: inline-block;
+  width: 1px;
+  color: white;
+}
+
+#nav_bar{
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+
+h1{
+  font-size: 72px;
+  font-family: Garamond;
+}
+

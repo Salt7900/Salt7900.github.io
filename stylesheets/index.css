@@ -1,0 +1,15 @@
+#photo{
+  display: inline-block;
+  position: absolute;
+  left:65%;
+  top:25%;
+}
+
+h2{
+  display: block;
+  margin-top: 0px;
+  position: relative;
+  top: 25%;
+  left: 15%;
+
+}
