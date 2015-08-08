@@ -11,5 +11,21 @@ h2{
   position: relative;
   top: 25%;
   left: 15%;
+  font-style: italic;
+  font-size: 32px;
+  border-bottom: 1px solid #2A4C7F;
+}
 
+#name{
+  margin-left: 15px;
+  color:#000B1C;
+  border-bottom: 1px solid #2A4C7F;
+}
+
+#am-text{
+  font-family: Garamond;
+  position: absolute;
+  margin-left: 20%;
+  top: 30%;
+  font-size: 24px;
 }
