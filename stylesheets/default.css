@@ -10,9 +10,9 @@ a{
   text-decoration: none;
 }
 
-a:hover{
-  color:#000B1C;
-  background-color: white;
+
+a:visited{
+  color:#2A4C7F;
 }
 
 .nav_bar{
@@ -31,11 +31,10 @@ a:hover{
 .link_bar{
   font-size: 24px;
   background-color: #000B1C;
+  width: 120px;
 }
 
 .link_bar_link{
-  display: inline-block;
-  width: 1px;
   color: white;
 }
 
@@ -45,8 +44,16 @@ a:hover{
   top: 15px;
 }
 
+a:hover{
+  color:#000B1C;
+  background-color: white;
+}
+
 h1{
   font-size: 72px;
   font-family: Garamond;
 }
 
+#current{
+  background-color: #00D2FF;
+}
