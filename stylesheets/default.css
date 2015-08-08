@@ -49,9 +49,11 @@ a:hover{
   background-color: white;
 }
 
-h1{
+.name{
   font-size: 72px;
   font-family: Garamond;
+  margin-left: 15px;
+  border-bottom: 1px solid #000B1C;
 }
 
 #current{
