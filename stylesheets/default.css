@@ -45,7 +45,7 @@ a:visited{
 }
 
 a:hover{
-  color:#000B1C;
+  color: #54381e;
   background-color: white;
 }
 
@@ -57,5 +57,6 @@ a:hover{
 }
 
 #current{
-  background-color: #00D2FF;
+  background-color: #54381e;
+  color: white;
 }
