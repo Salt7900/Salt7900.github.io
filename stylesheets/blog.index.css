@@ -41,7 +41,13 @@ font-size: 48px;
 
 #week_one_tech{
   position: relative;
-  margin-left: 73%;
+  margin-left: 60%;
+}
+
+#week_two_tech{
+  position: relative;
+  margin-left: 75%
+  bottom:35px;
 }
 
 #culture{
