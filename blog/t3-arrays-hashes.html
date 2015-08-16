@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben Fallon - Blog</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/blog.css">
+    <link rel="SHORTCUT ICON" type="image/ico" href="/favicon.ico" />
+  </head>
+
+  <body>
+
+<h1 class ="name">Ben Fallon </h1>
+      <div id="nav_bar">
+      <ul>
+        <li class="nav_bar"><a href="http://salt7900.github.io" class="nav_bar_link">About Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">Contact Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">My Work</a></li>
+        <li class="nav_bar"><a href="http://salt7900.github.io/blog.index" class="nav_bar_link" id="current">Blog</a></li>
+
+      </ul>
+    </div>
+
+    <div id=blog_text>
+
+  <h1>Arrays. Hashes. The Simple Difference.</h1>
+  <h4>8.16.2015, 12:18AM</h4>
+
+    <p>
+      It's amazing how far things can come in the span of three weeks. Three weeks ago, I could have told you very little about HTML, Git, CSS, or Ruby.And now I sit here and type this- a continuation of the weekly posts- about just that. Sometimes you just have to stop and look how far you've come in such an amount of time.
+    </p>
+
+    <h4>The Array.</h4>
+    <p>
+      At its most basic level, an array is simple. It's a variable that can have more then one value.
+    </p>
+    <p>
+      But life is rarely so simple. So to explain as to why you would use an array, lets consider an explanation. Let's pretend that I'm a high school teacher (yea, I know, it won't really ever happen but humor me for the moment). For some reason, I've decided that I want to write a program that takes all the birthdates of my students and stores them into variables. Now, each student could certainly get their own variable. It wouldn't be hard to say <br> student_one_age = 7 </br>
+      And that would certainly work. And then I just create a new one for each of the students. Say I have 26 students, so I end up with 26 variables. But now I pose a question: if I want to, say, find the average age of the class, how do I do that in short amounts of code? And how do I keep track of 26 variables for something so simple as age. And now the array starts to make sense. I can store the value for all 26 students in one spot. It's not all that complex, either- <br> student_age = [age_1, age_2, age_3] </br> And as simple as that, I can have all of the ages put in one spot, with only one variable name. When I want to find just one, I use the index of the spot.
+    </p>
+
+    <h4>The Hash.</h4>
+
+    <p>
+      That said, it probably isn't the best choice for what I want to do. Yes, it's great that it's all in one spot. However, I have to remember the index number of all the students to get to their age. Wouldn't it be great if I could use something other then an index number to find the age of a student. Say, their name? And thus is the genius that is the hash. The syntax is fairly similar: <br> student_age = { "Maddie" => 17, "Jack" => 18 } </br> Now all I have to do to get to the age (the value) is know somebodies name (the key). All I need to do is specify <br> student_age["Maddie"], and the return will be 17.
+    </p>
+
+    <p>But! It can go even further! Maybe I want to make the value in a hash an array! And why? Sticking with the teacher example, I want a program to store the grade results of my students, and I want to be able to be able to get to them with their name. There's been two tests, so I can't just make a hash. But I can make a hash of arrays. <br> student_grades = {"Maddie" = [96, 104], "Jack" = [56,76]} </br> And all the grades come back. To get to the grades of Jack, I just need to specify the name, and the array with the grades comes back.
+    </p>
+
+    <h4> -Salt7900 </h4>
+
+    </div>
+
+      <footer>Ben Fallon, 2015</footer>
+
+  </body>
