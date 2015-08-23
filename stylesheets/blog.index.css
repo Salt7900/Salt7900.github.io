@@ -36,30 +36,42 @@ font-size: 48px;
 
 #week_one{
   position: relative;
-  margin-left: 57%;
+  margin-left: 38%;
 }
 
 #week_three_culture{
   position: relative;
-  margin-left: 76%;
+  margin-left: 56%;
   bottom: 132px;
+}
+
+#week_four_culture{
+  position: relative;
+  margin-left: 75%;
+  bottom: 263px;
 }
 
 #week_one_tech{
   position: relative;
-  margin-left: 45%;
+  margin-left: 26%;
 }
 
 #week_two_tech{
   position: relative;
-  margin-left: 60%
+  margin-left: 41%
   bottom:35px;
 }
 
 #week_three_tech{
   position: relative;
-  margin-left: 75%
+  margin-left: 56%
   bottom:35px;
+}
+
+#week_four_tech{
+  position: relative;
+  margin-left: 75%;
+  bottom:131px;
 }
 
 #culture{
@@ -68,5 +80,5 @@ font-size: 48px;
 
 .link_bar{
   position: relative;
-  bottom: 350px;
+  bottom: 900px;
 }

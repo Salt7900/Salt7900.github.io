@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben Fallon - Blog</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/blog.css">
+    <link rel="SHORTCUT ICON" type="image/ico" href="/favicon.ico" />
+  </head>
+
+<body>
+
+  <h1 class ="name">Ben Fallon </h1>
+      <div id="nav_bar">
+      <ul>
+        <li class="nav_bar"><a href="http://salt7900.github.io" class="nav_bar_link">About Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">Contact Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">My Work</a></li>
+        <li class="nav_bar"><a href="http://salt7900.github.io/blog.index" class="nav_bar_link" id="current">Blog</a></li>
+
+      </ul>
+    </div>
+
+  <div id=blog_text>
+
+    <h1>Enumerables. Cycles.</h1>
+    <h4>8.23.2015, 4:46PM </h4>
+
+    <p>
+      We've finally moved to what we all came to do - ruby. This week we've been working on methods and how they interact with objects and the like.
+    </p>
+
+    <h4>Enumerable#cycle</h4>
+    <p>
+      Enumerables are ways of calling blocks and having every item in a hash or an array iterated over.
+    </p>
+    <p>
+      Cycle is just one of the many ways that an enumerable can be used. At it's most basic, it allows you to run over every element of said array and do what's in the block X amount of times. For instance, the following <br>array= ["a","b","c"]</br><br>array.cycle(2) {|x| puts x} ==> a, b, c, a, b, c </br>
+    </p>
+
+    <p>
+      All it did was take the array and go over it twice, doing the contents of the block to each individual element in the array. As we can see, and as we expected, the output is simply the contents of the array twice. If it was changed and we made it <br>array.cycle(4)</br> We would get the letters printed out four times.
+    </p>
+
+    <p>
+      Now, if you pass it an amount of negative or zero, as such <br> array.cycle(-3)</br> it will do nothing. Also along those lines, and something that is potentially dangerous, if you leave the number of cycles times empty: <br> array.cycle </br> it will continue to run the block forever.
+    </p>
+
+    <h4> -Salt7900 </h4>
+
+ </div>
+
+ <footer>Ben Fallon, 2015</footer>
+
+</body>
