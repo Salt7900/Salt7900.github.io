@@ -1,3 +1,8 @@
+body{
+  background: black;
+  color: #FFFFFF;
+}
+
 .ul_links{
   list-style-type: none;
   margin: 0;
@@ -19,7 +24,6 @@ a:visited{
   float: left;
   font-size: 24px;
   text-align: center;
-  background-color: #000B1C;
 }
 
 .nav_bar_link{
@@ -30,7 +34,6 @@ a:visited{
 
 .link_bar{
   font-size: 24px;
-  background-color: #000B1C;
   width: 120px;
 }
 
@@ -45,7 +48,7 @@ a:visited{
 }
 
 a:hover{
-  color: #54381e;
+  color: black;
   background-color: white;
 }
 
@@ -53,10 +56,10 @@ a:hover{
   font-size: 72px;
   font-family: Garamond;
   margin-left: 15px;
-  border-bottom: 1px solid #000B1C;
+  border-bottom: 1px solid #FF0F10;
 }
 
 #current{
-  background-color: #54381e;
+  background-color: #2A4C7F;
   color: white;
 }

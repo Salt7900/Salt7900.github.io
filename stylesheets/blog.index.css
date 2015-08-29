@@ -16,7 +16,7 @@ font-size: 48px;
 
 .myButton {
   background-color:#000B1C;
-  border:12px solid #54381e;
+  border:12px solid #BE0B0B;
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
@@ -30,30 +30,36 @@ font-size: 48px;
 }
 .myButton:hover {
   background-color:#ffffff;
-  color: #54381e;
-  border: 12px solid #000B1C;
+  color: #000B1C;
+  border: 12px solid #770505;
 }
 
-#week_one{
+#week_one_culture{
   position: relative;
-  margin-left: 38%;
+  margin-left: 25%;
 }
 
 #week_three_culture{
   position: relative;
-  margin-left: 56%;
-  bottom: 132px;
+  margin-left: 56%
+  bottom:35px;
 }
 
 #week_four_culture{
   position: relative;
-  margin-left: 75%;
-  bottom: 263px;
+  margin-left: 56%
+  bottom:35px;
+}
+
+#week_fice_culture{
+  position: relative;
+  margin-left: 56%
+  bottom:35px;
 }
 
 #week_one_tech{
   position: relative;
-  margin-left: 26%;
+  margin-left: 15%;
 }
 
 #week_two_tech{
@@ -68,10 +74,16 @@ font-size: 48px;
   bottom:35px;
 }
 
-#week_four_tech{
+#week_three_tech{
   position: relative;
-  margin-left: 75%;
-  bottom:131px;
+  margin-left: 56%
+  bottom:35px;
+}
+
+#week_five_tech{
+  position: relative;
+  margin-left: 56%
+  bottom:35px;
 }
 
 #culture{
@@ -79,6 +91,8 @@ font-size: 48px;
 }
 
 .link_bar{
-  position: relative;
-  bottom: 900px;
+  position:relative;
+  bottom: 500px;
+  display: block;
+
 }
