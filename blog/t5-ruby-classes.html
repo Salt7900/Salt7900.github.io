@@ -33,13 +33,13 @@
       We've been working on classes this week. And it comes out that they're super, super useful. But was is a class, and why is the best? Well, first, it's an object. As is everything in Ruby. But it's an object that can have different variables and methods- it keeps code shorter. For case of explanation, I'm going to use the example of a music library that you want to clean up and have the data for. Lets say that you want to know the title of the song, who wrote it, how long it is, and what album it's off of. Now, if we wanted to keep track of two songs, we'd need 8 variables. (2 songs x 4 things to store). Lets say we have a meager 100 songs. Thats 400 variables to name and to keep track of. The following block of code would be how one would be defined, and then it would output the song name.
     </p>
 
-    <img src = "imgs/variables.png"
+    <img src = "imgs/variables.png" style="width: 25%; height: 25%">
 
     <p>
       Now this isn't terrible, but imagine having to do that for 200 songs. 1000 songs? Forget it. Wouldn't there be a great way to create a blank template of "song" and then be able to assign the attributes different values? That's where the class comes about. In the following block of code, we define a new class, and then make a new instance of that class for the song One.
     </p>
 
-    <img scr = "imgs/class.png"
+    <img src = "imgs/class.png" style="width: 25%; height: 25%">
 
     <p>
       Now, for what's actually going on. We have the start of a class called "Song". Inside we have the method initialize, which is a special method in the sense that it will get run every time you make a new song. It accepts the arguments that we send it when we say one = Song.new. The reason that we have to equal them to "them self"(@artist = artist) is because we want to be able to get to those variables in a latter method. If we just said artist, we wouldn't be able to get to them outside of the initialize method. Let's say that we want to create another method inside of the class that prints "___ is the best!", with the ___ being the band that we give it. If we just left the variables inside the initialize method, we wouldn't be able to get to them inside of the "print" method.
@@ -57,7 +57,7 @@
       And the output will be "U2" By this seems like a lot of work to just store one song. That's because it is. But what if we have 5?
     </p>
 
-    <img src="imgs/titles.png">
+    <img src="imgs/titles.png" style="width: 25%; height: 25%">
 
     <p>
       That alone would be 20 variables to try to keep track of. And calling data isn't difficult. Want to print the album information of one of the songs?-
