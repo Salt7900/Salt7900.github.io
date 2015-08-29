@@ -32,32 +32,33 @@
     <p>
       We've been working on classes this week. And it comes out that they're super, super useful. But was is a class, and why is the best? Well, first, it's an object. As is everything in Ruby. But it's an object that can have different variables and methods- it keeps code shorter. For case of explanation, I'm going to use the example of a music library that you want to clean up and have the data for. Lets say that you want to know the title of the song, who wrote it, how long it is, and what album it's off of. Now, if we wanted to keep track of two songs, we'd need 8 variables. (2 songs x 4 things to store). Lets say we have a meager 100 songs. Thats 400 variables to name and to keep track of. The following block of code would be how one would be defined, and then it would output the song name.
     </p>
-    <p>
-      song_one_name = "One"
-      song_one_artist = "U2"
-      song_one_album = "Achtung Baby"
-      song_one_time = "4:36"
 
-      puts song_one_name
-    </p>
+    <ul>
+      <li>song_one_name = "One"<li>
+      <li>song_one_artist = "U2"<li>
+      <li>song_one_album = "Achtung Baby"<li>
+      <li>song_one_time = "4:36"<li>
+      <li>  <li>
+      <li>puts song_one_name<li>
+    </ul>
 
     <p>
       Now this isn't terrible, but imagine having to do that for 200 songs. 1000 songs? Forget it. Wouldn't there be a great way to create a blank template of "song" and then be able to assign the attributes different values? That's where the class comes about. In the following block of code, we define a new class, and then make a new instance of that class for the song One.
     </p>
 
-    <p>
-      class Song
-        attr_accessor :name, :artist, :album, :time
-        def initialize(name, artist, album, time)
-          @name = name
-          @artist = artist
-          @album = album
-          @time = time
-        end
-      end
-
-      one = Song.new("One","U2","Achtung Baby","4:36")
-    </p>
+    <ul>
+      <li>class Song</li>
+      <li>  attr_accessor :name, :artist, :album, :time</li>
+      <li>    def initialize(name, artist, album, time)</li>
+      <li>      @name = name</li>
+      <li>      @artist = artist</li>
+      <li>      @album = album</li>
+      <li>    @time = time</li>
+      <li>  end</li>
+      <li>end</li>
+        <li>    </li>
+      <li>one = Song.new("One","U2","Achtung Baby","4:36")</li>
+    </ul>
 
     <p>
       Now, for what's actually going on. We have the start of a class called "Song". Inside we have the method initialize, which is a special method in the sense that it will get run every time you make a new song. It accepts the arguments that we send it when we say one = Song.new. The reason that we have to equal them to "them self"(@artist = artist) is because we want to be able to get to those variables in a latter method. If we just said artist, we wouldn't be able to get to them outside of the initialize method. Let's say that we want to create another method inside of the class that prints "___ is the best!", with the ___ being the band that we give it. If we just left the variables inside the initialize method, we wouldn't be able to get to them inside of the "print" method.
@@ -75,28 +76,28 @@
       And the output will be "U2" By this seems like a lot of work to just store one song. That's because it is. But what if we have 5?
     </p>
 
-    <p>
-      one = Song.new("One","U2","Achtung Baby","4:36")
-      streets = Song.new("Where the Streets Have No Name","U2","The Joshua Tree","5:38")
-      angel = Song.new("Angel of Harlem","U2","Rattle and Hum","3:49")
-      sun = Song.new("Staring at the Sun","U2","Pop","4:37")
-      pride = Song.new("Pride(In the Name of Love)","U2","The Unforgettable Fire","3:48")
-    </p>
+    <ul>
+      <li>one = Song.new("One","U2","Achtung Baby","4:36")</ul>
+      <li>streets = Song.new("Where the Streets Have No Name","U2","The Joshua Tree","5:38")</ul>
+      <li>angel = Song.new("Angel of Harlem","U2","Rattle and Hum","3:49")</ul>
+      <li>sun = Song.new("Staring at the Sun","U2","Pop","4:37")</ul>
+      <li>pride = Song.new("Pride(In the Name of Love)","U2","The Unforgettable Fire","3:48")</ul>
+    <ul>
 
     <p>
       That alone would be 20 variables to try to keep track of. And calling data isn't difficult. Want to print the album information of one of the songs?-
 
-      puts sun.album ==> "Pop"
+      <br>puts sun.album ==> "Pop"</br>
     </p>
 
     <p>
       String interpolation works with classes as well. For instance, if we give type-
 
-      puts "#{sun.album} really has a few standout tracks."
+      <br>puts "#{sun.album} really has a few standout tracks."</br>
 
-      What we'll get when we run the program is
+     <br> What we'll get when we run the program is</br>
 
-      Pop really has a few standout tracks.
+     <br> Pop really has a few standout tracks.</br>
     </p>
 
     <h4> -Salt(Mr.U2)7900 </h4>
