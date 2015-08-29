@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben Fallon - Blog</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/blog.css">
+    <link rel="SHORTCUT ICON" type="image/ico" href="/favicon.ico" />
+  </head>
+
+<body>
+
+  <h1 class ="name">Ben Fallon </h1>
+      <div id="nav_bar">
+      <ul>
+        <li class="nav_bar"><a href="http://salt7900.github.io" class="nav_bar_link">About Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">Contact Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">My Work</a></li>
+        <li class="nav_bar"><a href="http://salt7900.github.io/blog.index" class="nav_bar_link" id="current">Blog</a></li>
+
+      </ul>
+    </div>
+
+  <div id=blog_text>
+
+    <h1>The Class</h1>
+    <h4>8.29.2015, 3:33PM </h4>
+
+    <p>
+      So, throughout this procress, there's certain moments where you look back at the week and see what you've learned, and can't help but think that you've made a big stride that week. That all of a sudden, what you're working on seems useful. That one day, you'll be saying "Yea, that was super important." In a sense, this week was one.
+    </p>
+
+    <p>
+      We've been working on classes this week. And it comes out that they're super, super useful. But was is a class, and why is the best? Well, first, it's an object. As is everything in Ruby. But it's an object that can have different variables and methods- it keeps code shorter. For case of explanation, I'm going to use the example of a music library that you want to clean up and have the data for. Lets say that you want to know the title of the song, who wrote it, how long it is, and what album it's off of. Now, if we wanted to keep track of two songs, we'd need 8 variables. (2 songs x 4 things to store). Lets say we have a meager 100 songs. Thats 400 variables to name and to keep track of. The following block of code would be how one would be defined, and then it would output the song name.
+    </p>
+    <p>
+      song_one_name = "One"
+      song_one_artist = "U2"
+      song_one_album = "Achtung Baby"
+      song_one_time = "4:36"
+
+      puts song_one_name
+    </p>
+
+    <p>
+      Now this isn't terrible, but imagine having to do that for 200 songs. 1000 songs? Forget it. Wouldn't there be a great way to create a blank template of "song" and then be able to assign the attributes different values? That's where the class comes about. In the following block of code, we define a new class, and then make a new instance of that class for the song One.
+    </p>
+
+    <p>
+      class Song
+        attr_accessor :name, :artist, :album, :time
+        def initialize(name, artist, album, time)
+          @name = name
+          @artist = artist
+          @album = album
+          @time = time
+        end
+      end
+
+      one = Song.new("One","U2","Achtung Baby","4:36")
+    </p>
+
+    <p>
+      Now, for what's actually going on. We have the start of a class called "Song". Inside we have the method initialize, which is a special method in the sense that it will get run every time you make a new song. It accepts the arguments that we send it when we say one = Song.new. The reason that we have to equal them to "them self"(@artist = artist) is because we want to be able to get to those variables in a latter method. If we just said artist, we wouldn't be able to get to them outside of the initialize method. Let's say that we want to create another method inside of the class that prints "___ is the best!", with the ___ being the band that we give it. If we just left the variables inside the initialize method, we wouldn't be able to get to them inside of the "print" method.
+    </p>
+
+    <p>
+      Something else to look at, is the attr_accessor. It just allows us to read and write to and from our objects. Because we have that, we can do things like this-
+    </p>
+
+    <p>
+      p one.artist
+    </p>
+
+    <p>
+      And the output will be "U2" By this seems like a lot of work to just store one song. That's because it is. But what if we have 5?
+    </p>
+
+    <p>
+      one = Song.new("One","U2","Achtung Baby","4:36")
+      streets = Song.new("Where the Streets Have No Name","U2","The Joshua Tree","5:38")
+      angel = Song.new("Angel of Harlem","U2","Rattle and Hum","3:49")
+      sun = Song.new("Staring at the Sun","U2","Pop","4:37")
+      pride = Song.new("Pride(In the Name of Love)","U2","The Unforgettable Fire","3:48")
+    </p>
+
+    <p>
+      That alone would be 20 variables to try to keep track of. And calling data isn't difficult. Want to print the album information of one of the songs?-
+
+      puts sun.album ==> "Pop"
+    </p>
+
+    <p>
+      String interpolation works with classes as well. For instance, if we give type-
+
+      puts "#{sun.album} really has a few standout tracks."
+
+      What we'll get when we run the program is
+
+      Pop really has a few standout tracks.
+    </p>
+
+    <h4> -Salt(Mr.U2)7900 </h4>
+
+ </div>
+
+ <footer>Ben Fallon, 2015</footer>
+
+</body>
