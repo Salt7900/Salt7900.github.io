@@ -51,10 +51,16 @@ font-size: 48px;
   bottom:35px;
 }
 
-#week_fice_culture{
+#week_five_culture{
   position: relative;
   margin-left: 56%
   bottom:35px;
+}
+
+#week_six_culture{
+  position: relative;
+  margin-left: 80.25%;
+  top:20px;
 }
 
 #week_one_tech{
@@ -74,7 +80,7 @@ font-size: 48px;
   bottom:35px;
 }
 
-#week_three_tech{
+#week_four_tech{
   position: relative;
   margin-left: 56%
   bottom:35px;
@@ -84,6 +90,12 @@ font-size: 48px;
   position: relative;
   margin-left: 56%
   bottom:35px;
+}
+
+#week_six_tech{
+  position: relative;
+  margin-left: 79.20%;
+  top:20px;
 }
 
 #culture{
