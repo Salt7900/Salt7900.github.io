@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben Fallon - Blog</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/blog.css">
+    <link rel="SHORTCUT ICON" type="image/ico" href="/favicon.ico" />
+  </head>
+
+<body>
+
+  <h1 class ="name">Ben Fallon </h1>
+      <div id="nav_bar">
+      <ul class="ul_links">
+        <li class="nav_bar"><a href="http://salt7900.github.io" class="nav_bar_link">About Me</a></li>
+        <li class="nav_bar"><a href="mailto:bnfallon@gmail.com?subject=Hello!">Contact Me</a></li>
+        <li class="nav_bar"><a href="#" class="nav_bar_link">My Work</a></li>
+        <li class="nav_bar"><a href="http://salt7900.github.io/blog.index" class="nav_bar_link" id="current">Blog</a></li>
+
+      </ul>
+    </div>
+
+  <div id=blog_text>
+
+    <h1>Blocs, Procs, and Lambdas</h1>
+    <h4>9.5.2015, 11:32PM </h4>
+
+    <p>
+      What exactly are any of them? At this point in the adventure that is DBC, I could tell you what a block is. I could tell you how to use a block- we do all the time, but not neccisarly do we know that. They just kinda make sense. But looking at Procs and Lambdas, then I'm not toally sure. I don't think we've used them, but they sound awfully framiliar. But we've not used them... So I had to look it up.
+    </p>
+
+    <h3>The Block</h3>
+
+    <p>
+      So what is a block, and why do I say that we've used them.. because we have. Just without knowing it. Simply put, it's everything that could be found between a do and an end. For example-
+    </p>
+
+    <img src = "imgs/block.png" style="width: 25%; height: 25%">
+
+    <p>
+      The "puts x" is the block. In another example -
+    </p>
+
+    <img src = "imgs/long_block.png" style="width: 25%; height: 25%">
+
+    <p>
+      Everything between the do and the end is still the block. It doesn't matter how long or how short it is. It's still a block.
+    </p>
+
+    <h3>The Proc</h3>
+
+    <p>
+      Now that's kinda a funny word, and one that you don't see every day. What is a proc? It sounds like a block.. and in a way it is. It's really just a block that is reusable, and that is an object. For instance-
+    </p>
+
+    <img src = "imgs/proc.png" style="width: 25%; height: 25%">
+
+    <p>
+      This does the same thing as the first block that was presented. And it outputs the same thing. So the question then becomes, why would one ever use a proc when blocks make sense? Because they can be used more then once!-
+    </p>
+
+    <img src = "imgs/long_proc.png" style="width: 25%; height: 25%">
+
+    <p>
+      If we had wanted to do the same thing to both array and array_2 using only blocs, we would have to retype the whole thing. Now this isn't a huge deal when you're dealing with a simple statement, much like we are. However, when they get longer, it can be nice to only have to type it all out, and thus store it, once.
+    </p>
+
+    <h3>The Lambda</h3>
+
+    <p>
+      A lambda is an extension of the proc. It IS a proc. But it also differs from a "regular" proc in a few ways. For starters, it cares about how many arguments it gets passed.
+      If you had a proc that accepts 1 argument, and you send it 2, it runs with the first and kinda forgets that the second is there. A lambda would raise an error. Say you had the same proc, and this time you pass it no arguments. It will return nil. If you run a lambda that way, you'll raise an error.
+    </p>
+
+    <p>
+      The other thing that makes them differ is a little harder to understand, and that is how each deal with the word return. A proc, when return is used, will jump to the next statement outside of the METHOD that calls the proc. A lambda will jump to the next statement outside of the lambda code. For instance -
+    </p>
+
+    <img src = "imgs/lambda.png" style="width: 25%; height: 25%">
+
+    <p>
+      In the proc, you'll never see the "Hello World!"- it jumps out of the method. You will, however, see it with the lambda, as it only jumps outside the lambda itself.
+    </p>
+
+    <h4> -Salt7900 </h4>
+
+ </div>
+
+ <footer>Ben Fallon, 2015</footer>
+
+</body>
