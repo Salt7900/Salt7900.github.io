@@ -1,0 +1,31 @@
+h3{
+  text-align: center;
+}
+
+ul{
+  text-align: left;
+}
+
+.info{
+  font-weight: normal;
+}
+
+#git_commands{
+  position: relative;
+  display: inline-block;
+  margin-right: 3%;
+  margin-left: 20%;
+  bottom: 150px;
+  width: 32.5%;
+  background-color: white;
+  color: black;
+}
+
+#cmd_line_commands{
+  position: relative;
+  display: inline-block;
+  bottom: 150px;
+  width: 32.5%;
+  background-color: white;
+  color: black;
+}
