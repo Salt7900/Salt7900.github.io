@@ -9,7 +9,7 @@
 
 <body>
 
-  <h1 class ="name">Ben Fallon </h1>
+  <h1 class ="name">Ben Fallon</h1>
       <div id="nav_bar">
       <ul class="ul_links">
         <li class="nav_bar"><a href="http://salt7900.github.io" class="nav_bar_link">About Me</a></li>
@@ -22,57 +22,62 @@
 
   <div id=blog_text>
 
-    <h1>Javascript</h1>
-    <h4>9.13.2015, 4:48PM</h4>
+    <h1>TDD</h1>
+    <h2>Test Driven Development</h2>
+    <h4>9.20.2015, 8:05PM</h4>
 
     <p>
-      You'd think that Object-Oriented languages would have more things in common.
+      We want you to fail.
     </p>
 
     <p>
-      Then again, when you think about it, you'd think that maybe they should be more different.
+      How often do you hear those words from someone you like? Probably about never.
     </p>
 
     <p>
-      Javascript is different then Ruby. But it isn't that different. A lot of things stay the same- the biggest change is to remember a ; at the end of a line. But for the most part, things are the same, they just go by different names.
-    </p>
-
-    <h3>The Hash</h3>
-
-    <p>
-      A hash is a Ruby thing. It's a Key-Value pair. Which is a fancy way of saying you want one thing to lead to another - like a dictionary. I have a bag of fruit, and want to document how many of each I have. I can create a hash that is called fruit_count. In it, I say "apple" ==> 3 and "pear" ==> 2. Now, when I want to see how many I have, I can just tell Ruby to look up the hash, and to access the apple part. It will return 3.
-    </p>
-
-    <h3>The Object</h3>
-
-    <p>
-      Let's first say that everything in ruby is an object. Even the hash, it's just a special kind of object.
+      But that's the idea of Test-Driven Development. To look for things that fail, and then to go back and fix them, so that they no longer fail. Often it involves writing the tests that you want to fail. But it can be as simple as calling an object that doesn't really exist. Trying to reference a variable that hasn't been declared. Invoking a method that doesn't yet exist.
     </p>
 
     <p>
-      JavaScript calls things objects, when in reality many other things are also objects.
+      Let's say that I'm trying to build a calculator. A simple enough program. If I were to just start, I'd dig right in, and probably end up with something that looks a little like this -
+    </p>
+
+    <img src = "imgs/add_me.png" style="width: 25%; height: 25%">
+
+    <p>
+      And when I want to use said method, I'd just call add and pass it the arguments that it wants.
     </p>
 
     <p>
-      But as to what it calls an object- it behaves much the same way that a Ruby hash would. Again, saying I have a bag of fruit. When I declare the variable fruit, I'll give it properties, and then those properties will have values. Sounds similar... So, I can again point apple to 3 and pear to 1.
+      But if I wanted to go about making my calculator with TDD, I'd start with a test first. I'd start with this.
     </p>
 
-    <h3>Getting back to the value</h3>
+    <img src = "imgs/call_me.png" style="width: 25%; height: 25%">
 
     <p>
-      Now, probably the biggest difference is how you get back to the values.
+      Which, will of course raise a multitude of errors for various reasons. The first that you will encounter will be the "Undefinded Method" error. Okay, so lets fix it and make a method. The code now looks like this -
+    </p>
+
+    <img src = "imgs/blank_add.png" style="width: 25%; height: 25%">
+
+    <p>
+      Which will, when run, of course return with an error. This time we get "Wrong Number of Arguments (2 for 0)" Which makes sense. We've defined the method, but we haven't told it to accept anything. So we can fix that -
+    </p>
+
+    <img src = "imgs/arguments.png" style="width: 25%; height: 25%">
+
+    <p>
+      Which, just returns "false". So now at least Ruby doens't have a problem with what's going on, but the logic isn't coming through. It should output "true" if the test works the right way. So, we once again amend the code -
+    </p>
+
+    <img src = "imgs/i_work.png" style="width: 25%; height: 25%">
+
+    <p>
+      And sure enough, it now returns true..
     </p>
 
     <p>
-      In Ruby, if you want to get to the apple count, you'd do this- <br>fruit_count[:apple]</br>
-    </p>
-
-    <p>
-      JavaScript is along those lines. You'd say <br>fruit_count.apple</br>
-    </p>
-
-    <p>
-      In both cases, the output will be 3.
+      Rinse and repeat.
     </p>
 
     <h4> -Salt7900 </h4>
